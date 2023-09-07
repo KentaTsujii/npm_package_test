@@ -1,0 +1,25 @@
+{
+  "name": "npm_package_test",
+  "version": "1.0.0",
+  "description": "this is type script package test.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",  // ← 追加（TypeScriptでビルド実行するコマンドの定義）
+    "prepare": "npm run build",  // ←　追加（公開前に自動でビルドするためのコマンド定義）
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KentaTsujii/npm_package_test.git"
+  },
+  "author": "Kenta Tsujii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KentaTsujii/npm_package_test/issues"
+  },
+  "homepage": "https://github.com/KentaTsujii/npm_package_test#readme",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  }
+}
